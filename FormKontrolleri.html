@@ -1,0 +1,231 @@
+<html>
+
+<head>
+    <title>Form Kontrolleri</title>
+    <link href="bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Textbox Ve Button</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mt-2 mb-2">
+                            <label class="form-label" for="tbisim">İsim: </label>
+                            <input type="text" class="form-control" id="tbisim" placeholder="İsminizi Giriniz">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="tbsoyisim">Soyisim: </label>
+                            <input type="text" class="form-control" id="tbsoyisim" placeholder="Soyisminizi Giriniz">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="tbkimlik">Kimlik No: </label>
+                            <input type="text" class="form-control" id="tbkimlik" placeholder="Kimlik No Giriniz"
+                                disabled>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="tbpasaport">Pasaport No: </label>
+                            <input type="text" class="form-control" id="tbpasaport" placeholder="Pasaport No Giriniz"
+                                readonly>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="Large">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="Small">
+                        </div>
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-primary">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Textarea</h3>
+                    </div>
+                    <div class="card-body">
+                        <label class="form-label">Adres: </label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-secondary">İptal</a>
+                        <a href="#" class="btn btn-primary">Gönder</a>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>Renk Seçici</h3>
+                    </div>
+                    <div class="card-body">
+                        <label>Renk Seçici</label>
+                        <input type="color" class="form-control form-control-color" value="#a52a2a">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Inline Controls</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                <h5>İsim:</h5>
+                                <input type="text" class="form-control-plaintext" placeholder="____________________">
+                            </div>
+                            <div class="col">
+                                <h5>Soyisim:</h5>
+                                <input type="text" class="form-control-plaintext" placeholder="____________________">
+                            </div>
+                            <div class="col">
+                                <h5>Telefon:</h5>
+                                <input type="text" class="form-control-plaintext" placeholder="____________________">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Seçim Kutuları</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label">Şehir Seçiniz</label>
+                            <select class="form-select">
+                                <option value="1">İstanbul</option>
+                                <option value="2">Ankara</option>
+                                <option value="3">İzmir</option>
+                                <option value="4">Eskişehir</option>
+                                <option value="5">Antalya</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">İlgilendiğiniz eğitimleri seçiniz</label>
+                            <select class="form-select" multiple>
+                                <option value="1">Yazılım Geliştirme</option>
+                                <option value="2">Veri Bilimi</option>
+                                <option value="3">Siber Güvenlik</option>
+                                <option value="4">Web Tasarımı</option>
+                                <option value="5">Mobil Uygulama Geliştirme</option>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">İlgilendiğiniz eğitimleri seçiniz</label>
+                            <input class="form-control" list="egitimler">
+                            <datalist id="egitimler">
+                                <option value="1">Yazılım Geliştirme</option>
+                                <option value="2">Veri Bilimi</option>
+                                <option value="3">Siber Güvenlik</option>
+                                <option value="4">Web Tasarımı</option>
+                                <option value="5">Mobil Uygulama Geliştirme</option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Checkbox ve Radio Button</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4>Checkbox</h4>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="secenek1" checked>
+                            <label class="form-check-label" for="secenek1">Seçenek 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="secenek2">
+                            <label class="form-check-label" for="secenek2">Seçenek 2</label>
+                        </div>
+                        <h4>Radio Button</h4>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="r1">
+                            <label class="form-check-label" for="r1">Seçenek 1</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="r2">
+                            <label class="form-check-label" for="r2">Seçenek 2</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="r3">
+                            <label class="form-check-label" for="r3">Seçenek 3</label>
+                        </div>
+                        <h4 class="mt-3">Şekilli Şukullu Checkbox (switch)</h4>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="secenek1" checked>
+                            <label class="form-check-label" for="secenek1">Seçenek 1</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Şekilli Şukullu Form</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <div class="input-group mt-2">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Kullanıcı Adı">
+                            </div>
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control" placeholder="Kullanıcı Adı">
+                                <span class="input-group-text">@hotmail.com</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group mt-2">
+                                <span class="input-group-text">Personel</span>
+                                <input type="text" class="form-control" placeholder="Adı">
+                                <input type="text" class="form-control" placeholder="Soyadı">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control" placeholder="Aranacak ürün veya numarası">
+                                <button class="btn btn-outline-primary" type="button">Ara</button>
+                            </div>
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control" placeholder="Güvenlik Kodu">
+                                <button class="btn btn-primary" type="button">Tamam</button>
+                                <button class="btn btn-danger" type="button">İptal</button>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="input-group mt-2">
+                                <input type="text" class="form-control">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">Seçenekler</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item">Seçenek 1</a></li>
+                                    <li><a class="dropdown-item">Seçenek 2</a></li>
+                                    <li><a class="dropdown-item">Seçenek 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
